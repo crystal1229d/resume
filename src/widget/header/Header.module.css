@@ -1,0 +1,76 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #ffffffcc;
+  backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid #eee;
+}
+
+.inner {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 12px;
+  align-items: center;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.logoMark {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #111;
+  border-radius: 50%;
+}
+
+.logoText {
+  font-size: 16px;
+}
+
+.nav {
+  display: none;
+  gap: 14px;
+}
+@media (min-width: 768px) {
+  .nav { display: inline-flex; }
+}
+
+.link {
+  color: #444;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  transition: background .2s ease, color .2s ease;
+}
+.link:hover { background: #f4f4f4; color: #111; }
+.active { color: #111; background: #efefef; }
+
+.actions {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.cta {
+  text-decoration: none;
+  font-size: 13px;
+  color: #111;
+  border: 1px solid #ddd;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: background .2s ease, border-color .2s ease;
+}
+.cta:hover { background: #f7f7f7; border-color: #ccc; }

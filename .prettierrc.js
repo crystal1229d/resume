@@ -1,3 +1,5 @@
+const { plugin } = require('typescript-eslint');
+
 module.exports = {
   printWidth: 100, // 한 줄 최대 길이
   tabWidth: 2, // 들여쓰기 공백 수
@@ -8,4 +10,14 @@ module.exports = {
   bracketSpacing: true, // 객체 리터럴에서 괄호 사이에 공백 추가
   arrowParens: 'always', // 화살표 함수 괄호 항상 사용
   endOfLine: 'lf', // 파일 끝 줄바꿈 방식 (Windows 사용 시 'crlf' 고려)
+  plugins: ['prettier-plugin-sort-json'],
+  overrides: [
+    {
+      files: 'messages/**/*.json',
+      options: {
+        tabWidth: 2,
+        jsonRecursiveSort: true,
+      },
+    },
+  ],
 };

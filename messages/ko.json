@@ -1,0 +1,18 @@
+{
+  "about": {
+    "profile": {}
+  },
+  "common": {
+    "action": {
+      "downloadResume": "이력서 다운로드"
+    },
+    "nav": {
+      "about": "소개",
+      "skills": "기술 스택",
+      "projects": "프로젝트",
+      "experience": "경력",
+      "blog": "블로그",
+      "contact": "연락처"
+    }
+  }
+}

@@ -4,6 +4,8 @@ import { FlatCompat } from '@eslint/eslintrc';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import eslintConfigPrettier from 'eslint-config-prettier';
+import jsoncPlugin from 'eslint-plugin-jsonc';
+import jsoncParser from 'jsonc-eslint-parser';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -60,6 +62,26 @@ export default [
     },
   },
 
+  {
+    files: ['messages/**/*.json'],
+    languageOptions: {
+      parser: jsoncParser,
+    },
+    plugins: {
+      jsonc: jsoncPlugin,
+    },
+    rules: {
+      'jsonc/no-dupe-keys': 'error',
+      'jsonc/indent': ['error', 2],
+      'jsonc/quote-props': ['error', 'always'],
+      'jsonc/sort-keys': [
+        'error',
+        { pathPattern: '^$', order: { type: 'asc', natural: true } },
+        { pathPattern: '^.*$', order: { type: 'asc', natural: true } },
+      ],
+    },
+  },
+
   eslintConfigPrettier,
 
   {
@@ -68,12 +90,14 @@ export default [
       '.next/',
       'public/',
       'dist/',
-      'out/',
       'build/',
-      '.env',
-      '*.config.js',
-      'pacakge-lock.json',
+      'out/',
+      'package-lock.json',
       'yarn.lock',
+      '*.config.js',
+      'generated/',
+      'coverage/',
+      '.env',
     ],
   },
 
