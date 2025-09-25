@@ -3,7 +3,7 @@ import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 
 import { Locale, routing } from '@/shared/lib/i18n';
-import { profile, getLocalizedTitle, getLocalizedName } from '@/shared/config/profile';
+import { createLocalizedMetadata } from '@/shared/lib/seo/meta';
 
 import { Header } from '@/widget/header';
 
@@ -17,30 +17,8 @@ export const dynamic = 'force-static';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }) {
   const { locale } = await params;
-  const title = `${getLocalizedName(locale)} — ${getLocalizedTitle(locale)}`;
-
-  return {
-    // metadataBase: new URL('https://editly.com'),
-    title: `${getLocalizedName(locale)} | ${getLocalizedTitle(locale)}`,
-    description: `${getLocalizedName(locale)} | ${getLocalizedTitle(locale)}`,
-    openGraph: {
-      title,
-      type: 'website',
-      // url: `https://editly/${locale}`,
-      siteName: `${getLocalizedName(locale)} | ${getLocalizedTitle(locale)}`,
-      locale: locale === 'ko' ? 'ko_KR' : 'en_AU',
-      alternateLocale: locale === 'ko' ? ['en_AU'] : ['ko_KR'],
-      images: [{ url: '/og.png' }],
-    },
-    authors: [{ name: getLocalizedName(locale), url: profile.github }],
-    alternates: {
-      canonical: `/${locale}`,
-      languages: { en: '/en', ko: '/ko' },
-    },
-    icons: { icon: [{ url: '/wizard.png', sizes: '18x18', type: 'image/png' }] },
-  };
+  return createLocalizedMetadata(locale);
 }
-
 interface Props {
   children: React.ReactNode;
   params: Promise<{ locale: Locale }>;
