@@ -1,6 +1,69 @@
 {
   "about": {
-    "profile": {}
+    "hero": {
+      "headline": "안녕하세요, 이수정입니다",
+      "sub": "대한민국에 거주하는 열정적인 프론트엔드 개발자입니다."
+    },
+    "keySkills": {
+      "caption": "저는 소통을 잘하고, 퀄리티 있는 결과물을 전달합니다.",
+      "data": {
+        "최신 소프트웨어 개발": "React, Next.js, TypeScript 및 최신 웹 개발 관행에 능숙합니다.",
+        "커뮤니케이션": "팀 협업 및 프로젝트 관리를 위해 Github, Notion, Jira를 사용한 경험이 있습니다.",
+        "그 외에는?": "새로운 기술을 배우고 지속적으로 기술을 향상시키고자 하는 열정이 있습니다."
+      }
+    },
+    "techStacks": {
+      "caption": "제가 주로 사용하는 기술 스택은 다음과 같습니다:",
+      "data": {
+        "frontend": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "JavaScript (ES5+)",
+          "HTML",
+          "CSS",
+          "Sass",
+          "Tailwind CSS"
+        ],
+        "backend": ["Node.js"],
+        "tools": ["Git/GitHub", "GitLab", "Notion", "Figma", "VSCode"],
+        "devops": ["Vercel", "Netlify"],
+        "others": ["PHP", "MySQL"]
+      }
+    },
+    "experience": {
+      "caption": "",
+      "work": [],
+      "project": []
+    },
+    "projectDetail": [],
+    "education": {
+      "caption": "",
+      "degree": [
+        {
+          "date": "2016.03 - 2019.03",
+          "name": "동양미래대학교",
+          "level": "컴퓨터소프트웨어공학"
+        },
+        {
+          "date": "2019.03 - 2020.03",
+          "name": "동양미래대학교",
+          "level": "컴퓨터소프트웨어공학(학사)"
+        }
+      ],
+      "foreignLanguage": [
+        {
+          "date": "2023.11.26",
+          "name": "TOEIC",
+          "level": "970 점"
+        },
+        {
+          "date": "2025.10.19",
+          "name": "IELTS (General Training)",
+          "level": "Overall 7.0"
+        }
+      ]
+    }
   },
   "common": {
     "action": {

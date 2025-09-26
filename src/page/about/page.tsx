@@ -11,10 +11,12 @@ import {
   profile,
 } from '@/shared/config/profile';
 
+import styles from './page.module.css';
+
 export default function AboutPage() {
   const locale = useLocale() as Locale;
   const tCommon = useTranslations('common');
-  // const tAbout = useTranslations('about');
+  const tAbout = useTranslations('about');
 
   const name = getLocalizedName(locale);
   const title = getLocalizedTitle(locale);
@@ -64,20 +66,25 @@ export default function AboutPage() {
         </a>
       </div>
 
-      <section className="mt-8">
-        <h2 className="text-base font-medium">경력</h2>
-        <ul className="list-disc ml-5 text-sm mt-2">
-          {/* 
-            섹션 본문/요약을 다국어로 넣고 싶다면:
-            1) messages/{locale}.json에 "about.summary": [...] 배열로 넣고 아래 map 사용
-            2) 혹은 /content/about.{locale}.mdx로 분리해서 MDX 렌더링
-          
-          {tAbout.raw('summary').map((s: string, i: number) => (
-            <li key={i}>{s}</li>
-          ))}
-          */}
-        </ul>
+      <section id="hero" className={styles.hero}>
+        <h1 className={styles.title}>{tAbout('headline')}</h1>
+        <p className={styles.subtitle}>{tAbout('sub')}</p>
+        <div className={styles.ctaRow}>
+          <a href="/#" className={styles.resumeBtn}>
+            downloadResume
+          </a>
+          <a href="#" className={styles.ghostBtn}>
+            seeProjects
+          </a>
+        </div>
       </section>
+
+      <div className={styles.dock} role="navigation">
+        <a href="#">SKILLS</a>
+        <a href="#">experience</a>
+        <a href="#">projects</a>
+        <a href="#">blog</a>
+      </div>
     </article>
   );
 }

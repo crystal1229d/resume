@@ -6,6 +6,7 @@ import { Locale, routing } from '@/shared/lib/i18n';
 import { createLocalizedMetadata } from '@/shared/lib/seo/meta';
 
 import { Header } from '@/widget/header';
+import NavBar from '@/widget/nav';
 
 // 빌드 시 정적으로 뽑을 locale 경로 지정
 export function generateStaticParams() {
@@ -38,7 +39,8 @@ export default async function RootLayout({ children, params }: Props) {
     <html lang={locale} suppressHydrationWarning>
       <body>
         <NextIntlClientProvider messages={messages} locale={locale}>
-          <Header locale={locale} />
+          {/* <Header locale={locale} /> */}
+          <NavBar />
           {children}
         </NextIntlClientProvider>
       </body>

@@ -1,6 +1,43 @@
 {
   "about": {
-    "profile": {}
+    "hero": {
+      "headline": "Hello, I'm Sujeong Lee",
+      "sub": "A passionate front-end developer based in South Korea."
+    },
+    "keySkills": {
+      "caption": "I communicate well and deliver quality work.",
+      "data": {
+        "Modern Software Development": "Proficient in React, Next.js, TypeScript, and modern web development practices.",
+        "Communication": "Experience in Github, Notion, Jira for team collaboration and project management.",
+        "What else?": "Eager to learn new technologies and continuously improve my skills."
+      }
+    },
+    "techStacks": {
+      "caption": "My key skills and technologies I work with:",
+      "data": {
+        "frontend": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "JavaScript (ES5+)",
+          "HTML",
+          "CSS",
+          "Sass",
+          "Tailwind CSS"
+        ],
+        "backend": ["Node.js"],
+        "tools": ["Git/GitHub", "GitLab", "Notion", "Figma", "VSCode"],
+        "devops": ["Vercel", "Netlify"],
+        "others": ["PHP", "MySQL"]
+      }
+    },
+    "experience": {
+      "caption": "",
+      "work": [],
+      "project": []
+    },
+    "projectDetail": [],
+    "education": []
   },
   "common": {
     "action": {
