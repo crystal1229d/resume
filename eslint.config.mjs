@@ -74,11 +74,11 @@ export default [
       'jsonc/no-dupe-keys': 'error',
       'jsonc/indent': ['error', 2],
       'jsonc/quote-props': ['error', 'always'],
-      'jsonc/sort-keys': [
-        'error',
-        { pathPattern: '^$', order: { type: 'asc', natural: true } },
-        { pathPattern: '^.*$', order: { type: 'asc', natural: true } },
-      ],
+      // 'jsonc/sort-keys': [
+      //   'error',
+      //   { pathPattern: '^$', order: { type: 'asc', natural: true } },
+      //   { pathPattern: '^.*$', order: { type: 'asc', natural: true } },
+      // ],
     },
   },
 

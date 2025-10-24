@@ -26,7 +26,7 @@
           "Tailwind CSS"
         ],
         "backend": ["Node.js"],
-        "tools": ["Git/GitHub", "GitLab", "Notion", "Figma", "VSCode"],
+        "tools": ["Git/GitHub", "Notion", "Figma", "VSCode"],
         "devops": ["Vercel", "Netlify"],
         "others": ["PHP", "MySQL"]
       }
