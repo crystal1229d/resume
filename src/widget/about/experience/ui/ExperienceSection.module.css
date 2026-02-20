@@ -1,0 +1,221 @@
+.section {
+  padding: 38px 0;
+  /* border-top: 1px solid var(--line); */
+  scroll-margin-top: calc(var(--barH) + 22px);
+}
+
+.h2 {
+  font-size: 20px;
+  margin: 0 0 14px;
+}
+
+.timeline {
+  display: grid;
+  gap: 14px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 160px 18px 1fr;
+  gap: 14px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.left {
+  min-width: 0;
+}
+
+.year {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+
+.term {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.mid {
+  position: relative;
+  display: grid;
+  justify-items: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  border: 2px solid rgba(0, 0, 0, 0.18);
+  background: #fff;
+  margin-top: 2px;
+}
+
+.dotCurrent {
+  border-color: color-mix(in srgb, var(--accent) 65%, rgba(0, 0, 0, 0.18));
+}
+
+.line {
+  width: 2px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 999px;
+  margin-top: 6px;
+}
+
+.right {
+  min-width: 0;
+}
+
+.head {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.companyBlock {
+  min-width: 0;
+}
+
+.company {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: -0.01em;
+}
+
+.location {
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 12px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(29, 78, 216, 0.25);
+  background: rgba(29, 78, 216, 0.1);
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.role {
+  white-space: nowrap;
+}
+
+.desc {
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.list {
+  margin: 12px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.65;
+  font-size: 13px;
+}
+
+.li {
+  margin: 6px 0;
+}
+
+@media (max-width: 860px) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .mid {
+    display: none;
+  }
+
+  .left {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+  }
+
+  .term {
+    margin-top: 0;
+  }
+}
+
+.projects {
+  margin-top: 12px; /* list 아래에 살짝만 */
+}
+
+.projectsTitle {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.projectList {
+  margin: 0;
+  padding-left: 18px; /* 기존 list랑 동일한 들여쓰기 */
+  color: var(--muted);
+}
+
+.projectItem {
+  margin: 10px 0;
+}
+
+.projectHead {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.projectName {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.82);
+}
+
+.projectTech {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.projectSummary {
+  margin-top: 6px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.results {
+  margin-top: 10px;
+}
+
+.resultsTitle {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+  margin-bottom: 6px;
+}

@@ -7,40 +7,33 @@ import { DEFAULT_LOCALE, Locale, SUPPORTED_LOCALES } from '@/shared/lib/i18n/con
 const intlMiddleware = createMiddleware(routing);
 
 function pickLocale(req: NextRequest): Locale {
-  // 1) 쿠키 우선 (사용자 선택)
+  // 1) Cookie preference
   const cookieLocale = req.cookies.get('NEXT_LOCALE')?.value;
   if (cookieLocale && (SUPPORTED_LOCALES as readonly string[]).includes(cookieLocale)) {
     return cookieLocale as Locale;
   }
 
-  // 2) 브라우저 언어
+  // 2) Browser language
   const al = req.headers.get('accept-language') ?? '';
   const primary = al.split(',')[0]?.split('-')[0]?.toLowerCase();
   if (primary && (SUPPORTED_LOCALES as readonly string[]).includes(primary)) {
     return primary as Locale;
   }
 
-  // 3) 폴백
+  // 3) Fallback
   return DEFAULT_LOCALE;
 }
 
 export default function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
 
-  // `/` → `/{locale}/about`
+  // `/` -> `/{locale}`
   if (pathname === '/') {
     const locale = pickLocale(req);
-    return NextResponse.redirect(new URL(`/${locale}/about`, req.url));
+    return NextResponse.redirect(new URL(`/${locale}`, req.url));
   }
 
-  // `/en` 또는 `/ko` → `/{locale}/about`
-  const m = pathname.match(/^\/(en|ko)$/);
-  if (m) {
-    const locale = m[1] as Locale;
-    return NextResponse.redirect(new URL(`/${locale}/about`, req.url));
-  }
-
-  // 나머지는 next-intl에 위임
+  // Delegate the rest to next-intl
   return intlMiddleware(req);
 }
 

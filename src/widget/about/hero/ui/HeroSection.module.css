@@ -1,0 +1,56 @@
+.hero {
+  padding: 42px 0 38px;
+}
+
+.kicker {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 44px;
+  line-height: 1.05;
+  margin: 0 0 14px;
+  letter-spacing: -0.02em;
+}
+
+.name {
+  font-size: 44px;
+  line-height: 1.1;
+  margin: 0 0 12px;
+}
+
+.sub {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0 0 18px;
+
+  white-space: pre-line;
+}
+
+/* Contact */ 
+.contacts {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.contactLink {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--fg) 10%, transparent);
+  text-decoration: none;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.contactLink:hover {
+  color: var(--fg);
+}

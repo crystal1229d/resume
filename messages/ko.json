@@ -1,25 +1,17 @@
 {
-  "certifications": {
-    "items": [
-      {
-        "date": "2024.01",
-        "name": "운전면허",
-        "note": "2종 자동"
-      },
-      {
-        "date": "2019.11",
-        "name": "TOEIC",
-        "note": "970점"
-      },
-      {
-        "date": "2025.XX",
-        "name": "IELTS (GT)",
-        "note": "each band 7.0+"
-      }
-    ],
-    "title": "자격/어학"
+  "meta": {
+    "keywords": "Frontend, React, Next.js, TypeScript, JavaScript, UI/UX, Accessibility, SEO, Performance, PHP, MySQL",
+    "siteDescription": "Frontend engineer building production UI — with the ability to go down to APIs/DB when needed.",
+    "siteName": "이력서 · 포트폴리오"
   },
+
   "common": {
+    "actions": {
+      "copy": "복사",
+      "openInNewTab": "새 탭에서 열기",
+      "emailCopyLabel": "이메일 주소 복사",
+      "emailCopied": "복사됨"
+    },
     "english": "영어",
     "highlights": "핵심 기여",
     "korean": "한국어",
@@ -27,212 +19,326 @@
     "responsibilities": "담당",
     "results": "성과",
     "role": "역할",
+    "team": "참여인원",
     "techStack": "기술 스택",
     "term": "기간"
   },
-  "contact": {
-    "email": "crystal1229d@gmail.com",
-    "links": {
-      "github": "https://github.com/xxx",
-      "linkedin": "https://www.linkedin.com/in/xxx"
-    },
-    "title": "연락처"
-  },
-  "education": {
-    "items": [
-      {
-        "degree": "컴퓨터소프트웨어공학",
-        "name": "동양미래대학교",
-        "term": "2016.03 - 2019.03"
-      },
-      {
-        "degree": "컴퓨터소프트웨어공학(학사)",
-        "name": "동양미래대학교",
-        "term": "2019.03 - 2020.03"
-      }
-    ],
-    "title": "학력"
-  },
-  "experience": {
-    "items": [
-      {
-        "company": "(주) 드제이",
-        "description": "대기업 웹/플랫폼 고도화 및 리뉴얼 다수. 레거시 HTML/CSS/JS 자산을 React/Next.js+TypeScript로 점진 전환하고, PHP·MySQL 기반 운영 시스템을 안정화.",
-        "location": "서울, 한국",
-        "responsibilities": [
-          "LG AI Square 고도화 — PHP·MySQL 기반 기능 개선 및 운영 안정화(쿼리/인덱스 정비, 캐시 레이어 도입)",
-          "LG PWN — 정적 자산 구조화(HTML/CSS/JS), 접근성/반응형 개선, 빌드 파이프라인 정리",
-          "SKT AI 마케터(백오피스) — React+TypeScript 설계(상태 관리/라우팅/테이블/권한) *프로젝트 일시 중단*",
-          "현대오토에버 KIA 특수차량 — 사이트 리뉴얼(HTML/CSS/JS → React/Next.js+TS), 디자인 시스템 컴포넌트화"
-        ],
-        "role": "Frontend 개발자",
-        "term": "2024.06–2026.06 (2년)"
-      },
-      {
-        "company": "(주) 씨큐프라임",
-        "description": "QR 테이블오더 플랫폼을 0→1로 구축 후 4년+ 운영. 소비자 웹앱, 멤버십, 백오피스, 프랜차이즈 커스텀까지 담당.",
-        "location": "서울, 한국",
-        "responsibilities": [
-          "이모더 플랫폼 (웹앱·백오피스·멤버십·프랜차이즈 커스텀) — 주문/결제(선불·후불)·멤버십 도메인 모델링 및 E2E 구현, PG(일반/정기)·POS 연동, Map API 기반 근접 매장·배달 가능 반경 검색, Feature Flag 파이프라인 도입, 코드 컨벤션·모듈 구조 정비, 플로우 다이어그램·운영 문서 작성",
-          "스마트 무인냉장고 — 태그 이벤트 수집/검증 및 결제 플로우 구현",
-          "설문 작성 및 대시보드 API (Manitto & You) — 설문 템플릿/작성 API와 응답 집계 파이프라인 설계·구현"
-        ],
-        "role": "Fullstack 웹 개발자",
-        "term": "2019.01–2023.10"
-      }
-    ],
-    "title": "경력"
-  },
-  "hero": {
-    "ctaPrimary": "프로젝트 보기",
-    "ctaSecondary": "이력서 다운로드",
-    "locationNote": "현재 호주 체류(워홀). 호주 프론트엔드/풀스택 포지션 지원.",
-    "subtitle": "도메인 모델링부터 API·UI·관측성까지 프로덕션 시스템을 엔드투엔드로 만듭니다.",
-    "title": "풀스택 웹 개발자"
-  },
-  "meta": {
-    "keywords": "웹, 프론트엔드, 백엔드, 풀스택, Next.js, TypeScript, PHP, MySQL, POS, 결제",
-    "siteDescription": "프로덕트 마인드의 풀스택 웹 개발자 — 도메인 설계부터 API, UI, 운영 관측성까지.",
-    "siteName": "이력서 · 포트폴리오"
-  },
+
   "nav": {
     "blog": "블로그",
-    "contact": "연락하기",
+    "certification": "자격 · 어학",
     "downloadResume": "이력서 다운로드",
+    "education": "학력",
+    "experience": "경력",
     "language": "언어",
     "portfolio": "포트폴리오",
-    "resume": "이력서"
+    "profile": "프로필",
+    "project": "프로젝트",
+    "resume": "이력서",
+    "competency": "역량",
+    "contact": "연락처"
   },
+
+  "hero": {
+    "subtitle": "6년 이상의 실무 경험을 바탕으로 운영형 서비스와 엔터프라이즈 리뉴얼 프로젝트를 수행해왔습니다. \n제품이 계속 변화하는 환경에서 유지보수 가능한 UI를 만드는 데 집중합니다.",
+    "title": "웹 프론트엔드 엔지니어"
+  },
+
+  "experience": {
+    "title": "경력",
+    "items": [
+      {
+        "company": "씨큐프라임",
+        "location": "서울, 한국",
+        "role": "웹 엔지니어 (프론트엔드 중심)",
+        "term": "2019.01–2023.10",
+        "summary": "QR 기반 테이블오더 플랫폼(EMOrder) 및 관련 백오피스 시스템을 개발하고 4년 이상 운영 유지보수.",
+        "projects": [
+          {
+            "name": "EMOrder — QR 기반 프랜차이즈 테이블오더 웹앱",
+            "summary": "프랜차이즈별 커스터마이징이 가능한 주문·결제 웹앱 개발 및 운영.",
+            "contributions": [
+              "주문/결제(선불·후불) 화면 구현 및 중복 결제·재시도·상태 불일치 등 예외 케이스 대응",
+              "PG 결제 모듈 연동 및 결제 상태(성공/실패/취소) 처리 UI 구현",
+              "POS 프로그램과 주문 상태 동기화 기능 구현",
+              "브랜드별 UI/기능 변경 요구에 맞춘 커스텀 기능 개발",
+              "기능 구현 과정에서 DB 테이블 생성 및 SQL 작성, PHP API 구현"
+            ],
+            "results": [
+              "600여 개 가맹점에서 운영 (2022년 기준)",
+              "누적 20만 건 이상의 주문을 처리하는 상용 서비스 유지보수 경험"
+            ],
+            "tech": ["JavaScript", "PHP", "MySQL", "PG", "POS"]
+          },
+          {
+            "name": "EMOrder 백오피스 및 멤버십 기능",
+            "summary": "매장/메뉴 관리, 매출·고객 정보 조회 및 멤버십(포인트/쿠폰/스탬프) 기능 개발.",
+            "contributions": [
+              "매장/메뉴 CRUD 화면 구현 및 API 연동",
+              "포인트/쿠폰/스탬프 조회·적립·사용 기능 개발",
+              "백엔드와 협업하여 응답 구조 조율 및 화면 로직 개선",
+              "운영 중 발생한 데이터/상태 불일치 이슈 수정"
+            ],
+            "results": ["운영자 중심 기능을 안정적으로 유지보수"],
+            "tech": ["JavaScript", "PHP", "MySQL"]
+          },
+          {
+            "name": "마니또와유 — 설문 작성 및 대시보드 기능",
+            "summary": "외식 프랜차이즈 대상 설문 서비스에서 설문 작성 기능과 응답 데이터 기반 대시보드 API 개발.",
+            "contributions": [
+              "설문 템플릿/설문 CRUD 기능 개발",
+              "설문 결과 집계를 위한 DB 테이블 설계 및 SQL 작성",
+              "차트에 맞는 형식으로 데이터 가공 및 API 구현",
+              "화면 연동 및 기능 개선"
+            ],
+            "results": ["설문 데이터 기반 대시보드 기능 구현"],
+            "tech": ["PHP", "MySQL", "Google Chart"]
+          }
+        ]
+      },
+      {
+        "company": "드제이",
+        "location": "서울, 한국",
+        "role": "프론트엔드 / 웹 엔지니어",
+        "term": "2024.06–현재",
+        "summary": "엔터프라이즈 웹사이트 리뉴얼 및 기능 확장 프로젝트 수행.",
+        "projects": [
+          {
+            "name": "KIA 현대오토에버 특수차량 사이트 리뉴얼",
+            "summary": "정적 사이트를 React/Next.js + TypeScript 기반 구조로 전환하고 기능 확장.",
+            "contributions": [
+              "HTML/CSS/JS 기반 정적 사이트를 Next.js + TypeScript로 단계적 마이그레이션",
+              "문의하기·검색 기능을 API 기반 구조로 구현",
+              "회원/게시물 관리 백오피스 화면 개발",
+              "시맨틱 마크업, 키보드 접근성, SEO(meta/OG) 정비"
+            ],
+            "results": ["컴포넌트 기반 구조 도입으로 페이지 확장 생산성 향상"],
+            "tech": ["React", "Next.js", "TypeScript", "CSS Modules"]
+          },
+          {
+            "name": "LG AI Square 고도화",
+            "summary": "레거시 PHP/MySQL 모듈 개선 및 API 응답 구조 정리.",
+            "contributions": [
+              "검색/페이지네이션 응답 구조 개선으로 프론트 연동 복잡도 감소",
+              "예외 처리 및 로깅 보강",
+              "슬로우 쿼리 점검 및 인덱스 개선 작업"
+            ],
+            "results": ["프론트엔드 개발 생산성 향상 및 운영 안정성 개선"],
+            "tech": ["PHP", "MySQL"]
+          }
+        ]
+      }
+    ]
+  },
+
+  "competencies": {
+    "title": "역량과 경험",
+    "items": [
+      {
+        "kicker": "Production Systems",
+        "title": "운영형 UI 설계 및 개선",
+        "chip": "주문 · 결제 · 백오피스",
+        "lead": "운영 중인 서비스에서 주문/결제 사용자 흐름과 백오피스 UI를 개발·개선하며, 예외 케이스까지 포함한 화면 상태와 표시 규칙을 정리해왔습니다.",
+        "bullets": [
+          "재시도/중복 요청/상태 불일치 등 엣지 케이스를 고려해 UI 상태·표시 규칙 정리",
+          "반복되는 운영 기능을 화면/패턴 단위로 모듈화해 유지보수 부담을 줄임",
+          "운영 이슈 대응을 위해 로그/히스토리 관점의 흐름을 정돈하고 재현성을 높임"
+        ]
+      },
+      {
+        "kicker": "Platform Migration",
+        "title": "리뉴얼·마이그레이션 + 기능 확장",
+        "chip": "Next.js · TypeScript",
+        "lead": "기존 정적 사이트를 단계적으로 Next.js + TypeScript로 전환하고, 이후 문의하기/검색/데이터 기반 렌더링 같은 기능을 추가하며 유지보수 가능한 구조로 확장 개발했습니다.",
+        "bullets": [
+          "1차: 정적 페이지를 Next.js 기반으로 전환하며 컴포넌트 중심 구조로 정리",
+          "2~3차: 문의하기/검색 기능 구현 및 API 기반 데이터 렌더링 추가",
+          "회원/게시물 관리 백오피스 화면 개발",
+          "접근성(시맨틱/키보드)과 SEO 기본 요소(meta/OG 등) 정비"
+        ]
+      },
+      {
+        "kicker": "Backend Collaboration",
+        "title": "레거시 안정화",
+        "chip": "PHP · MySQL",
+        "lead": "프론트엔드 개발에 직접적인 영향을 주는 레거시 모듈과 데이터 구조를 함께 개선해, 화면 개발의 복잡도를 낮추고 운영 안정성을 높였습니다.",
+        "bullets": [
+          "검색/페이지네이션 응답 구조를 정리해 화면 연동 복잡도를 낮춤",
+          "예외 처리와 로깅을 보강해 운영 대응성을 강화",
+          "슬로우 쿼리 점검 및 인덱스 개선으로 성능 이슈 완화"
+        ]
+      }
+    ]
+  },
+
+  "certifications": {
+    "items": [
+      { "date": "2019.11", "name": "TOEIC", "note": "970" },
+      { "date": "2024.01", "name": "운전면허", "note": "2종(자동)" }
+    ],
+    "title": "자격 · 어학"
+  },
+
+  "education": {
+    "title": "학력",
+    "items": [
+      {
+        "school": "동양미래대학교",
+        "degree": "컴퓨터소프트웨어공학 (전문학사 + 전공심화 1년)",
+        "term": "2016.03–2020.03",
+        "graduation": "졸업",
+        "location": "서울, 한국"
+      }
+    ]
+  },
+
+  "contact": {
+    "title": "연락처 및 외부 링크",
+    "items": [
+      {
+        "label": "E-mail",
+        "value": "leecrystal1229d@gmail.com",
+        "action": "copy"
+      },
+      {
+        "label": "GitHub",
+        "value": "github.com/crystal1229d",
+        "href": "https://github.com/crystal1229d",
+        "action": "external"
+      },
+      {
+        "label": "LinkedIn",
+        "value": "",
+        "href": "",
+        "action": "external"
+      }
+    ],
+    "note": {
+      "prefix": "이 포트폴리오는 ",
+      "cta": "A4 규격의 PDF로 다운로드",
+      "suffix": "할 수 있습니다.",
+      "pdfUrl": "/resume"
+    }
+  },
+
   "projects": {
     "emorderPlatform": {
       "highlights": [
-        "주문/결제(선불·후불)·멤버십 도메인 모델링 및 E2E 구현",
-        "PG(일반/정기)·POS 디지털메뉴 연동, 결제 이슈 대응을 위한 구조적 로깅 강화",
-        "Map API 기반 근접 매장·배달 가능 반경 검색(좌표 필터링 + 경량 캐시)",
-        "브랜드별 기능 차이를 위한 Feature Flag 파이프라인 도입(대규모 커스터마이징 효율화)",
-        "코드 컨벤션·모듈 구조 정비로 확장성/생산성 향상, React 전환 제안 및 사내 테크토크",
-        "플로우 다이어그램·운영 문서 작성으로 온보딩/협업 속도 개선"
+        "주문/결제(선불·후불) 플로우에서 예외 시나리오(중복 결제/재시도/상태 불일치)를 고려해 UI 상태/표시 규칙 정리",
+        "백오피스의 매장/메뉴 운영 화면에서 반복 기능을 모듈화해 유지보수 비용 절감",
+        "브랜드별 커스텀 요구를 흡수하기 위해 화면/설정 구조를 정리하고, 변경 영향 범위를 줄이는 패턴 축적",
+        "운영 관점에서 장애 재현/원인 파악이 가능하도록 로그/히스토리 관점의 데이터 흐름을 정돈"
       ],
-      "link": "",
-      "metrics": {
-        "badges": [
-          { "label": "매장 수", "value": "600+" },
-          { "label": "주문 수", "value": "183k" },
-          { "label": "GMV", "value": "₩7.56B" },
-          { "label": "운영 년수", "value": "4+" }
-        ],
-        "note": "수치는 비식별·기간 고정(2022-07 기준 GMV).",
-        "title": "요약 지표"
-      },
-      "name": "이모더 플랫폼 (웹앱·백오피스·멤버십·프랜차이즈 커스텀)",
+      "name": "EMOrder 플랫폼 (웹앱·백오피스·멤버십·프랜차이즈 커스텀)",
       "results": [
-        "600+ 매장 배포; 주문 183,782건; GMV ₩7.56B 처리 (2022-07 기준).",
-        "POS/PG 통합과 구조적 로깅으로 결제 성공률 향상, 장애 트라이아지 시간 단축.",
-        "Feature Flag·모듈화로 브랜드 커스텀 납기 단축 및 재사용성 향상."
+        "운영형 서비스에서 ‘바꾸기 쉬운 UI’와 ‘문제 추적 가능한 흐름’을 만드는 경험 축적"
       ],
-      "role": "풀스택",
-      "summary": "QR 테이블오더를 0→1로 구축하고 4년+ 운영. 주문/결제, 멤버십, 백오피스, 브랜드 커스터마이징을 도메인 중심으로 설계/구현.",
-      "team": "3명 (PM 1, WEB 2, SERVER 1)",
-      "tech": [
-        "JavaScript",
-        "PHP",
-        "MySQL",
-        "REST",
-        "PG",
-        "POS",
-        "Map API",
-        "Feature Flags",
-        "Logging/Observability"
-      ],
+      "role": "웹 엔지니어 (프론트엔드 중심)",
+      "summary": "주문/결제 사용자 플로우와 운영자 백오피스를 중심으로 UI/기능을 설계·개선하며, 운영 이슈에 강한 화면/데이터 흐름을 구축.",
+      "tech": ["JavaScript", "PHP", "MySQL", "PG", "POS", "Map API"],
       "term": "2019.01–2023.10"
     },
     "kiaSpecialVehiclesRenewal": {
       "highlights": [
-        "마이그레이션 플랜 수립(라우팅/상태/빌드 전략) 및 컴포넌트 설계",
-        "SSR/ISR 적용으로 초기 로드 성능 및 SEO 개선",
-        "반응형 레이아웃 재구성과 접근성 점검(시맨틱 마크업/키보드 내비)",
-        "메타/오픈그래프·sitemap·robots 적용으로 검색 노출 최적화"
+        "1차: 정적 HTML/CSS/JS를 React/Next.js + TypeScript 기반으로 마이그레이션",
+        "2~3차: 문의하기/검색 기능 구현 및 API 기반 데이터 렌더링",
+        "회원/게시물 관리 백오피스 구축",
+        "접근성(시맨틱/키보드) 및 SEO 기본 요소 정비"
       ],
       "name": "현대오토에버 — KIA 특수차량 사이트 리뉴얼",
       "results": [
-        "레이아웃/컴포넌트 재사용으로 신규 페이지 제작 속도 향상",
-        "초기 로드/SEO 지표 개선(라이브 지표 연결 시 대시보드로 확인 가능)"
+        "페이지 추가/변경 시 재사용 가능한 구조로 개발 생산성 향상",
+        "정적 사이트를 확장 가능한 데이터 기반 플랫폼으로 전환"
       ],
       "role": "프론트엔드",
-      "summary": "정적 HTML/CSS/JS 사이트를 React/Next.js+TypeScript 기반으로 마이그레이션하여 성능/SEO/운영 편의성 개선.",
-      "tech": ["React", "Next.js", "TypeScript", "CSS Modules", "HTML/CSS/JS(legacy)"],
-      "term": "2025.07-2025.12"
+      "summary": "완전 정적 사이트를 React/Next.js + TypeScript로 마이그레이션(1차)하고, 이후 동적 기능과 백오피스를 확장 개발.",
+      "tech": ["React", "Next.js", "TypeScript", "CSS Modules", "HTML/CSS/JS (Legacy)"],
+      "term": "2024.06–2024.12"
     },
     "lgAiSquare": {
       "highlights": [
-        "PHP·MySQL 기반 기능 개선 및 운영 안정화(쿼리/인덱스 정비, 캐시 레이어 도입)",
-        "운영 이슈 대응을 위한 로깅/모니터링 강화",
-        "코드 컨벤션·모듈 구조 정비로 확장성/생산성 향상"
+        "페이지네이션/검색 응답 구조를 정리해 화면 연동 난이도 감소",
+        "운영 이슈 대응을 위한 예외 처리/로깅 보강",
+        "슬로우 쿼리 점검과 인덱스 개선으로 체감 성능 이슈 완화"
       ],
       "name": "LG AI Square 고도화",
-      "results": ["운영 이슈 대응 시간 단축", "코드 품질 향상으로 신규 기능 개발 생산성 향상"],
-      "role": "백엔드",
-      "summary": "PHP·MySQL 기반 LG AI Square 웹사이트의 기능 개선과 운영 안정화 작업 수행.",
-      "team": "2명 (PM 1, WEB 1)",
-      "tech": ["PHP", "MySQL", "HTML/CSS/JS"],
-      "term": "2024.06–2025.06"
+      "results": [
+        "프론트엔드 개발 생산성을 떨어뜨리는 데이터/응답 문제를 줄이고 운영 대응성을 강화"
+      ],
+      "role": "웹 엔지니어",
+      "summary": "레거시 모듈을 정리하고 운영 안정성을 높이기 위한 개선을 수행(쿼리/캐시/로깅). 프론트 개발 시 병목이 되는 API/데이터 구조도 함께 정리.",
+      "tech": ["PHP", "MySQL"],
+      "term": "2024.07-2025.01"
+    },
+    "lgPwn": {
+      "highlights": [
+        "섹션/카드/테이블 등 반복 UI를 컴포넌트 단위로 정리해 변경 비용 감소",
+        "반응형·크로스 브라우저 이슈 대응 및 스타일 기준 정리",
+        "콘텐츠 구조(헤딩/목차/링크) 기준을 정해 페이지 품질을 균일화"
+      ],
+      "name": "LG PWN — 정적 페이지/컴포넌트 개발",
+      "results": ["유사 페이지/섹션 개발 속도 향상 및 UI 품질 편차 감소"],
+      "role": "프론트엔드",
+      "summary": "정적 환경에서 반복되는 UI를 재사용 가능한 블록으로 정리하고, 반응형/접근성 기준을 맞춰 UI 품질을 안정화.",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "term": "2025.04–2025.04"
+    },
+    "sideProjects": {
+      "items": [
+        {
+          "highlights": [
+            "에디팅 UI(꾸미기)와 상태 관리를 분리해 복잡한 상호작용을 안정적으로 처리",
+            "결과물을 이미지로 저장/공유하는 사용자 흐름 설계"
+          ],
+          "name": "AI Post Card",
+          "role": "개인 / Fullstack",
+          "summary": "메시지 작성과 카드 꾸미기 UI를 제공하고, 입력을 기반으로 이미지를 생성·저장·공유하는 인터랙티브 프로젝트.",
+          "tech": ["React", "Next.js", "TypeScript", "Zustand", "Tailwind", "Testing"],
+          "term": "2024.01"
+        },
+        {
+          "highlights": ["다국어 구조 설계", "다크/라이트 테마 구성"],
+          "name": "resu-folio",
+          "role": "개인 / Frontend",
+          "summary": "다국어(한/영)와 테마 전환을 지원하는 이력서/포트폴리오 웹.",
+          "tech": ["React", "i18n", "Styled-components"],
+          "term": "2024.01"
+        },
+        {
+          "highlights": ["핵심 기능 단위 테스트 작성", "입력 UX 개선"],
+          "name": "Mandalart",
+          "role": "개인 / Frontend",
+          "summary": "만다라트 작성/초기화/이미지 저장 기능을 갖춘 단기 프로젝트.",
+          "tech": ["React", "Jest", "Testing Library", "Styled-components"],
+          "term": "2024.01"
+        }
+      ],
+      "title": "사이드 프로젝트"
+    },
+    "sktAiMarketer": {
+      "highlights": [
+        "공통 컴포넌트/타입 정의로 화면 간 재사용성 강화",
+        "상태/데이터 흐름을 단순화해 변경에 강한 UI 구조 수립"
+      ],
+      "name": "SKT AI 마케터 — 백오피스 (Paused)",
+      "results": ["추가 화면/조건 확장에 유리한 백오피스 UI 기반 구축"],
+      "role": "프론트엔드",
+      "summary": "React/TypeScript 기반 백오피스에서 공통 UI 패턴(테이블/필터/폼)과 상태 흐름을 정리해 확장 가능한 구조를 설계.",
+      "tech": ["React", "TypeScript"],
+      "term": "2024.XX–보류"
     },
     "smartFridge": {
-      "highlights": ["태그 이벤트 수집/검증 및 결제 플로우 구현"],
-      "name": "스마트 무인냉장고 — 태그/결제 API",
-      "results": ["엣지 이벤트 안정성 향상 및 실패 진단 용이", "관측성 강화로 MTTR 단축"],
-      "role": "백엔드",
-      "summary": "상품 꺼냄 이벤트 기반 자동 결제 API를 설계·구현(태그 검증 + 결제 처리).",
-      "team": "2명",
-      "tech": ["PHP", "MySQL"],
-      "term": "2021.05–2021.10"
+      "name": "Smart Unmanned Fridge - Tag & Payment APIs",
+      "role": "Back-end",
+      "summary": "Designed and built auto-charge APIs triggered by item removal events.",
+      "term": "2021.05-2021.10"
     },
     "surveyDashboard": {
-      "highlights": [
-        "템플릿 CRUD·설문 생성 API 구현",
-        "집계 결과를 Google Charts 스키마로 변환하여 프런트 차트 바인딩 비용 절감",
-        "‘템플릿 → 설문 전환’ 기능 제안·주도, 데이터 흐름 문서화"
-      ],
-      "name": "설문 작성 및 대시보드 API (Manitto & You)",
-      "results": [
-        "차트 데이터 표준화로 프런트 연동 공수 감소",
-        "작성/응답/집계 경계를 분리해 유지보수성 향상"
-      ],
-      "role": "백엔드",
-      "summary": "설문 템플릿/작성 API와 응답 집계 파이프라인을 설계·구현하고, 차트 바인딩을 단순화.",
-      "team": "4명 (PM1, FE1, BE2)",
-      "tech": ["PHP", "MySQL", "Google Charts"],
-      "term": "2022.09–2022.11"
+      "name": "Survey Authoring & Dashboard APIs (ManittoWay)",
+      "role": "Back-end",
+      "summary": "Implemented survey template/authoring APIs and aggregation pipeline for dashboards.",
+      "term": "2022.09-2022.11"
     },
     "title": "프로젝트"
-  },
-  "resume": {
-    "profile": {
-      "summary": [
-        "경력 6+년(2019–2023, 2024–2025) 풀스택 엔지니어. 외식 도메인의 주문/결제, 멤버십, 백오피스 중심 경험.",
-        "강점: 도메인 설계, 실용적인 API, 깔끔한 UI 플로우, 운영 신뢰성(로깅/메트릭).",
-        "호주 취업 준비 중(2025년 IELTS 응시 예정 / TOEIC 970)."
-      ],
-      "title": "프로필"
-    },
-    "skills": {
-      "backend": {
-        "items": ["PHP", "MySQL"],
-        "title": "백엔드"
-      },
-      "frontend": {
-        "items": ["React", "Next.js", "TypeScript", "JavaScript (ES5+)", "HTML/CSS"],
-        "title": "프론트엔드"
-      },
-      "platform": {
-        "items": ["PG 결제(일반/정기)", "POS 연동", "Feature Flag", "i18n"],
-        "title": "플랫폼/도메인"
-      },
-      "title": "기술",
-      "tools": {
-        "items": ["Git/GitHub", "Figma", "Jira/Notion"],
-        "title": "도구"
-      }
-    }
   }
 }

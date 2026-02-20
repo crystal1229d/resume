@@ -1,0 +1,8 @@
+﻿.shell {
+  width: calc(980px - 20px * 2);
+  margin: 15px auto;
+
+  position: sticky;
+  top: 12px;
+  z-index: 60;
+}

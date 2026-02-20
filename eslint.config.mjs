@@ -35,6 +35,7 @@ export default [
       'import/extensions': 'off',
       'import/prefer-default-export': 'off',
       'react/button-has-type': 'off',
+      'react/require-default-props': 'off',
       'import/no-extraneous-dependencies': [
         'error',
         {

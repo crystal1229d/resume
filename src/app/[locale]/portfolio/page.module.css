@@ -1,0 +1,141 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+
+.header h1 {
+  font-family: var(--font-display);
+  margin: 0 0 8px;
+}
+
+.header p {
+  margin: 0;
+  color: rgba(28, 27, 26, 0.65);
+}
+
+.grid {
+  display: grid;
+  gap: 22px;
+}
+
+.card {
+  padding: 22px;
+  border-radius: 22px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.cardHeader h2 {
+  font-size: 1.3rem;
+  margin: 0 0 8px;
+  font-family: var(--font-display);
+}
+
+.cardHeader span {
+  color: rgba(28, 27, 26, 0.7);
+}
+
+.cardMeta {
+  display: grid;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: rgba(28, 27, 26, 0.6);
+}
+
+.metrics {
+  padding: 16px;
+  border-radius: 16px;
+  background: var(--bg-muted);
+  border: 1px solid rgba(35, 57, 91, 0.08);
+}
+
+.metricsTitle {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.metricBadges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.metricBadge {
+  background: rgba(35, 57, 91, 0.12);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.metricNote {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: rgba(28, 27, 26, 0.6);
+}
+
+.blockTitle {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.block ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.tech {
+  display: grid;
+  gap: 8px;
+}
+
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.techList span {
+  border: 1px solid rgba(35, 57, 91, 0.2);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+}
+
+.team {
+  display: grid;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: rgba(28, 27, 26, 0.65);
+}
+
+.teamNote {
+  font-size: 0.85rem;
+  color: rgba(28, 27, 26, 0.55);
+}
+
+.ownership {
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(228, 87, 46, 0.12);
+  color: rgba(28, 27, 26, 0.8);
+}

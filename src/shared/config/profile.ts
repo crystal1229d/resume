@@ -4,15 +4,17 @@ type Localized<T extends string = string> = Record<'ko' | 'en', T>;
 
 export const profile = {
   name: { ko: '이수정', en: 'Soojung Lee' },
-  title: { ko: '프론트엔드 개발자', en: 'Frontend Developer' },
+  title: { ko: '웹 프론트엔드 개발자', en: 'Web Frontend Engineer' },
   email: 'leecrystal1229d@gmail.com',
   github: 'https://github.com/crystal1229d',
+  linkedin: 'https://www.linkedin.com/in/crystal1229d',
   resume: { en: '/assets/resume/soojung-lee_en.pdf', ko: '/assets/resume/soojung-lee_ko.pdf' },
 } as const satisfies {
   name: Localized;
   title: Localized;
   email: string;
   github: string;
+  linkedin: string;
   resume: Localized;
 };
 

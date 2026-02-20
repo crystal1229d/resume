@@ -16,7 +16,7 @@ module.exports = {
       files: 'messages/**/*.json',
       options: {
         tabWidth: 2,
-        jsonRecursiveSort: true,
+        plugins: [],
       },
     },
   ],

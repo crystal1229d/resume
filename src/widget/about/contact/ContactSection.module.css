@@ -1,0 +1,235 @@
+.section {
+  padding: 38px 0;
+  scroll-margin-top: calc(var(--barH) + 22px);
+}
+
+.h2 {
+  font-size: 18px;
+  margin: 0 0 14px;
+  letter-spacing: -0.01em;
+}
+
+.panel {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.list {
+  margin: 0;
+  display: grid;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 14px 16px;
+}
+
+.row + .row {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.dt {
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  padding-top: 3px;
+}
+
+.dd {
+  margin: 0;
+  min-width: 0;
+}
+
+.valueWrap {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 6px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.link {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-color: rgba(0, 0, 0, 0.22);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+
+  word-break: break-word; 
+  overflow-wrap: anywhere;
+}
+
+.link:hover {
+  text-decoration-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ============================= */
+/* Copy value button */
+/* ============================= */
+
+.copyValue {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+
+  font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+}
+
+/* ============================= */
+/* Action Icon */
+/* ============================= */
+
+.actionIcon {
+  position: relative;
+  top: 3px;
+
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgba(0, 0, 0, 0.55);
+
+  opacity: 0;
+  pointer-events: none;
+
+  cursor: pointer;
+  transition: opacity 140ms ease, color 140ms ease;
+}
+
+.actionIcon :global(svg) {
+  width: 14px;
+  height: 14px;
+}
+
+.valueWrap:hover .actionIcon,
+.valueWrap:focus-within .actionIcon {
+  opacity: 0.9;
+  pointer-events: auto;
+  color: var(--accent);
+}
+
+.actionIcon:hover,
+.actionIcon:focus-visible {
+  opacity: 1;
+  color: var(--accent);
+}
+
+.actionIcon[data-active='true'] {
+  opacity: 1;
+  pointer-events: auto;
+  color: var(--accent);
+}
+
+/* ============================= */
+/* Note 영역 */
+/* ============================= */
+
+.note {
+  margin: 0;
+  padding: 12px 16px 14px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.noteCta {
+  position: relative;
+  display: inline-flex;
+  gap: 2px;
+
+  text-decoration: none;
+  color: inherit;
+
+  margin: 0 0 0 3px;
+}
+
+.noteCtaText {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+  padding-bottom: 1px;
+}
+
+.noteCta:hover .noteCtaText,
+.noteCta:focus-visible .noteCtaText {
+  border-bottom-color: var(--accent);
+  color: var(--accent);
+}
+
+.noteDoor {
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+
+  width: 0;
+  opacity: 0;
+
+  transform: translateX(-2px);
+  transition: width 180ms ease, opacity 180ms ease, transform 180ms ease;
+}
+
+.noteDoorIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+  color: var(--accent);
+}
+
+.noteDoorIcon :global(svg) {
+  width: 14px;
+  height: 14px;
+}
+
+.noteCta:hover .noteDoor,
+.noteCta:focus-visible .noteDoor {
+  width: 14px;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.noteSuffix {
+  display: inline-block;
+  transition: transform 180ms ease;
+}
+
+.noteCta:hover + .noteSuffix,
+.noteCta:focus-visible + .noteSuffix {
+  transform: translateX(3px);
+}
+
+@media (max-width: 860px) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .dt {
+    padding-top: 0;
+  }
+
+  .actionIcon {
+    opacity: 0.9;
+    pointer-events: auto;
+  }
+}

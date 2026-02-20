@@ -1,47 +1,72 @@
-import { notFound } from 'next/navigation';
-import { hasLocale, NextIntlClientProvider } from 'next-intl';
-import { getMessages, setRequestLocale } from 'next-intl/server';
+﻿import '../globals.css';
 
-import { Locale, routing } from '@/shared/lib/i18n';
+import { Metadata } from 'next';
+import { IBM_Plex_Mono, IBM_Plex_Sans, Sora } from 'next/font/google';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
+
+import type { Locale } from '@/shared/lib/i18n';
+import { SUPPORTED_LOCALES } from '@/shared/lib/i18n/config';
 import { createLocalizedMetadata } from '@/shared/lib/seo/meta';
+import { AppHeader } from '@/widget/header/ui/AppHeader';
 
-import { Header } from '@/widget/header';
-import NavBar from '@/widget/nav';
+import styles from './layout.module.css';
 
-// 빌드 시 정적으로 뽑을 locale 경로 지정
-export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }));
-}
+const displayFont = Sora({
+  subsets: ['latin'],
+  variable: '--font-display',
+  weight: ['400', '600', '700'],
+});
 
-// 정적 강제 (Optional) - 빌드 시 모든 locale에 대해 정적 HTML 생성
-export const dynamic = 'force-static';
+const bodyFont = IBM_Plex_Sans({
+  subsets: ['latin'],
+  variable: '--font-body',
+  weight: ['300', '400', '500', '600'],
+});
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }) {
-  const { locale } = await params;
-  return createLocalizedMetadata(locale);
-}
-interface Props {
+const monoFont = IBM_Plex_Mono({
+  subsets: ['latin'],
+  variable: '--font-mono',
+  weight: ['400', '500'],
+});
+
+type LayoutProps = {
   children: React.ReactNode;
   params: Promise<{ locale: Locale }>;
+};
+
+export function generateStaticParams() {
+  return SUPPORTED_LOCALES.map((locale) => ({ locale }));
 }
 
-export default async function RootLayout({ children, params }: Props) {
+export async function generateMetadata({ params }: LayoutProps): Promise<Metadata> {
   const { locale } = await params;
 
-  if (!hasLocale(routing.locales, locale)) {
-    notFound();
-  }
+  const tMeta = await getTranslations({ locale, namespace: 'meta' });
 
-  setRequestLocale(locale); // 설정 locale로 고정 -> 정적 캐시/SSG
+  return createLocalizedMetadata(locale, {
+    siteName: tMeta('siteName'),
+    siteDescription: tMeta('siteDescription'),
+    keywords: tMeta('keywords'),
+  });
+}
+
+
+export default async function LocaleLayout({ children, params }: LayoutProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   const messages = await getMessages();
 
   return (
-    <html lang={locale} suppressHydrationWarning>
-      <body>
-        <NextIntlClientProvider messages={messages} locale={locale}>
-          {/* <Header locale={locale} /> */}
-          <NavBar />
-          {children}
+    <html
+      lang={locale}
+      className={`${displayFont.variable} ${bodyFont.variable} ${monoFont.variable}`}
+    >
+      <body className={styles.body}>
+        <NextIntlClientProvider messages={messages}>
+          <AppHeader locale={locale} />
+          <main className={styles.main}>{children}</main>
         </NextIntlClientProvider>
       </body>
     </html>

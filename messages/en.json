@@ -1,55 +1,335 @@
 {
-  "about": {
-    "hero": {
-      "headline": "Hello, I'm Sujeong Lee",
-      "sub": "A passionate front-end developer based in South Korea."
-    },
-    "keySkills": {
-      "caption": "I communicate well and deliver quality work.",
-      "data": {
-        "Modern Software Development": "Proficient in React, Next.js, TypeScript, and modern web development practices.",
-        "Communication": "Experience in Github, Notion, Jira for team collaboration and project management.",
-        "What else?": "Eager to learn new technologies and continuously improve my skills."
-      }
-    },
-    "techStacks": {
-      "caption": "My key skills and technologies I work with:",
-      "data": {
-        "frontend": [
-          "React",
-          "Next.js",
-          "TypeScript",
-          "JavaScript (ES5+)",
-          "HTML",
-          "CSS",
-          "Sass",
-          "Tailwind CSS"
-        ],
-        "backend": ["Node.js"],
-        "tools": ["Git/GitHub", "Notion", "Figma", "VSCode"],
-        "devops": ["Vercel", "Netlify"],
-        "others": ["PHP", "MySQL"]
-      }
-    },
-    "experience": {
-      "caption": "",
-      "work": [],
-      "project": []
-    },
-    "projectDetail": [],
-    "education": []
+  "meta": {
+    "keywords": "Frontend, React, Next.js, TypeScript, JavaScript, UI/UX, Accessibility, SEO, Performance, PHP, MySQL",
+    "siteDescription": "Frontend engineer building production UI — with the ability to go down to APIs/DB when needed.",
+    "siteName": "Resume · Portfolio"
   },
+
   "common": {
-    "action": {
-      "downloadResume": "Download resume"
+    "actions": {
+      "copy": "Copy",
+      "openInNewTab": "Open in new tab",
+      "downloadPdf": "Download as A4 PDF",
+      "emailCopyLabel": "Copy email address",
+      "emailCopied": "Copied"
     },
-    "nav": {
-      "about": "About",
-      "skills": "Skills",
-      "projects": "Projects",
-      "experience": "Experience",
-      "blog": "Blog",
-      "contact": "Contact"
+    "english": "English",
+    "highlights": "Highlights",
+    "korean": "Korean",
+    "more": "Learn more",
+    "responsibilities": "Responsibilities",
+    "results": "Outcomes",
+    "role": "Role",
+    "team": "Team",
+    "techStack": "Tech Stack",
+    "term": "Term"
+  },
+
+  "nav": {
+    "blog": "Blog",
+    "certification": "certification",
+    "downloadResume": "Download CV",
+    "education": "education",
+    "experience": "experience",
+    "language": "Language",
+    "portfolio": "Portfolio",
+    "profile": "profile",
+    "project": "project",
+    "resume": "Resume",
+    "competency": "Competencies",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "subtitle": "Frontend-focused engineer with 6+ years of experience across production systems and enterprise renewals. \nI build UI that stays maintainable as products evolve.",
+    "title": "Web Frontend Engineer"
+  },
+
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "company": "CecurePrime",
+        "location": "Seoul, South Korea",
+        "role": "Web Engineer (Frontend-focused)",
+        "term": "Jan 2019 – Oct 2023",
+        "summary": "Developed and maintained a QR-based table ordering platform (EMOrder) and related admin systems in a live production environment for over four years.",
+        "projects": [
+          {
+            "name": "EMOrder — QR-based Franchise Table Ordering Web App",
+            "summary": "Developed and maintained a customisable order and payment web application used by franchise stores.",
+            "contributions": [
+              "Implemented order and payment (prepaid/postpaid) flows and handled edge cases such as duplicate payments, retries, and inconsistent transaction states",
+              "Integrated PG payment modules and implemented UI handling for payment success, failure, and cancellation states",
+              "Implemented order status synchronisation with POS systems",
+              "Developed custom UI/features based on franchise-specific requirements",
+              "Created necessary DB tables and wrote SQL queries, and implemented related PHP APIs as part of feature development"
+            ],
+            "results": [
+              "Operated across 600+ franchise stores (as of 2022)",
+              "Maintained a production service that processed 200K+ orders"
+            ],
+            "tech": ["JavaScript", "PHP", "MySQL", "PG", "POS"]
+          },
+          {
+            "name": "EMOrder Admin & Membership Features",
+            "summary": "Developed admin interfaces and membership features including points, coupons, and stamps.",
+            "contributions": [
+              "Built admin CRUD interfaces for store and menu management with API integration",
+              "Implemented membership features for earning and using points, coupons, and stamps",
+              "Collaborated with backend engineers to align API response structures and refine frontend logic",
+              "Investigated and fixed data/state inconsistencies reported in production"
+            ],
+            "results": ["Stably maintained operational features used by store managers"],
+            "tech": ["JavaScript", "PHP", "MySQL"]
+          },
+          {
+            "name": "ManittoWay — Survey Authoring & Dashboard Features",
+            "summary": "Developed survey authoring features and data-driven dashboard APIs for a franchise survey service.",
+            "contributions": [
+              "Implemented CRUD features for survey templates and surveys",
+              "Designed DB tables and wrote SQL queries for aggregating survey results",
+              "Processed aggregated data into chart-friendly formats and implemented related APIs",
+              "Integrated APIs with frontend dashboards and improved usability"
+            ],
+            "results": ["Delivered dashboard features based on aggregated survey data"],
+            "tech": ["PHP", "MySQL", "Google Chart"]
+          }
+        ]
+      },
+      {
+        "company": "DJ",
+        "location": "Seoul, South Korea",
+        "role": "Frontend / Web Engineer",
+        "term": "Jun 2024 – Present",
+        "summary": "Worked on enterprise website renewal and feature expansion projects.",
+        "projects": [
+          {
+            "name": "KIA Hyundai AutoEver Special Vehicles Website Renewal",
+            "summary": "Migrated a static website to a React/Next.js + TypeScript-based architecture and extended its functionality.",
+            "contributions": [
+              "Gradually migrated a legacy HTML/CSS/JS site to a component-based Next.js + TypeScript structure",
+              "Implemented dynamic features such as contact forms and search with API integration",
+              "Developed admin interfaces for member and content management",
+              "Improved semantic markup, keyboard accessibility, and SEO (meta/OG tags)"
+            ],
+            "results": [
+              "Improved maintainability and scalability through a component-driven structure"
+            ],
+            "tech": ["React", "Next.js", "TypeScript", "CSS Modules"]
+          },
+          {
+            "name": "LG AI Square Enhancement",
+            "summary": "Improved legacy PHP/MySQL modules and API response structures.",
+            "contributions": [
+              "Refined search and pagination response structures to reduce frontend integration complexity",
+              "Improved exception handling and logging",
+              "Reviewed slow queries and assisted with index improvements"
+            ],
+            "results": ["Improved frontend development efficiency and operational stability"],
+            "tech": ["PHP", "MySQL"]
+          }
+        ]
+      }
+    ]
+  },
+
+  "competencies": {
+    "title": "Competencies & Experience",
+    "items": [
+      {
+        "kicker": "Production Systems",
+        "title": "Production UI Systems",
+        "chip": "Ordering · Payments · Backoffice",
+        "lead": "Built and improved user-facing flows and backoffice UI in live services, focusing on clear UI state rules that hold up under real operational edge cases.",
+        "bullets": [
+          "Defined explicit UI state and display rules for edge cases such as retries, duplicate requests, and inconsistent states",
+          "Modularized repeated admin/backoffice patterns to reduce maintenance cost over time",
+          "Improved diagnosability by organizing flow-aware logs/histories to support incident triage and reproducibility"
+        ]
+      },
+      {
+        "kicker": "Platform Migration",
+        "title": "Web Platform Migration & Expansion",
+        "chip": "Next.js · TypeScript",
+        "lead": "Migrated a static website to Next.js + TypeScript in phases and expanded it with new features while maintaining a predictable and maintainable structure.",
+        "bullets": [
+          "Phase 1: migrated static pages into a component-driven Next.js structure",
+          "Phase 2–3: added contact forms, search, and API-driven UI rendering",
+          "Built backoffice pages for member and content management",
+          "Applied accessibility basics (semantic/keyboard) and SEO essentials (meta/OG)"
+        ]
+      },
+      {
+        "kicker": "Backend Collaboration",
+        "title": "Legacy Stabilization",
+        "chip": "PHP · MySQL",
+        "lead": "Improved legacy modules and backend response structures that directly affected frontend development, reducing frontend integration complexity while strengthening operational stability.",
+        "bullets": [
+          "Refined search/pagination response formats to lower frontend complexity",
+          "Strengthened exception handling and logging for production support",
+          "Reviewed slow queries and indexes to mitigate performance bottlenecks"
+        ]
+      }
+    ]
+  },
+
+  "certifications": {
+    "items": [
+      { "date": "2019.11", "name": "TOEIC", "note": "970" },
+      { "date": "2024.01", "name": "Driver’s License", "note": "Class 2 (Automatic)" }
+    ],
+    "title": "Certifications"
+  },
+
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "school": "Dongyang Mirae University",
+        "degree": "Computer Software Engineering (Associate Degree + Bachelor Completion Year)",
+        "term": "Mar 2016 – Mar 2020",
+        "graduation": "Graduated",
+        "location": "Seoul, South Korea"
+      }
+    ]
+  },
+
+  "contact": {
+    "title": "Contact Information & Links",
+    "items": [
+      {
+        "label": "E-mail",
+        "value": "leecrystal1229d@gmail.com",
+        "action": "copy"
+      },
+      {
+        "label": "GitHub",
+        "value": "github.com/crystal1229d",
+        "href": "https://github.com/crystal1229d",
+        "action": "external"
+      },
+      {
+        "label": "LinkedIn",
+        "value": "",
+        "href": "",
+        "action": "external"
+      }
+    ],
+    "note": {
+      "prefix": "This portfolio can be ",
+      "cta": "downloaded as an A4 PDF",
+      "suffix": ".",
+      "pdfUrl": "/resume"
     }
+  },
+
+  "projects": {
+    "emorderPlatform": {
+      "highlights": [
+        "Clarified UI state rules for edge cases in payment flows (retry, duplicated requests, inconsistent states)",
+        "Modularized repeated backoffice behaviors to reduce maintenance cost",
+        "Built patterns to absorb brand-level customization with minimal impact scope",
+        "Improved diagnosability by organizing flow-aware logs/histories for incident triage"
+      ],
+      "name": "EMOrder Platform (WebApp, Backoffice, Loyalty, Franchise Customizations)",
+      "results": [
+        "Experience building change-friendly UI and traceable flows in an operational product"
+      ],
+      "role": "Web Engineer (Frontend-focused)",
+      "summary": "Owned key UI and feature improvements for ordering/payment flows and backoffice tools, with a strong focus on edge cases and production stability.",
+      "tech": ["JavaScript", "PHP", "MySQL", "Payment Gateway", "POS", "Map API"],
+      "term": "2019.01–2023.10"
+    },
+    "kiaSpecialVehiclesRenewal": {
+      "highlights": [
+        "Phase 1: Migrated static HTML/CSS/JS to React/Next.js + TypeScript with reusable component structure",
+        "Phase 2–3: Implemented contact forms, search functionality, and data-driven UI with API integration",
+        "Built a backoffice system for member and content management",
+        "Established accessibility (semantic/keyboard) and SEO hygiene (meta/OG/sitemap)"
+      ],
+      "name": "Hyundai Autoever — KIA Special Vehicles Site Renewal",
+      "results": [
+        "Faster page changes and safer development through reusable components",
+        "Transitioned from a purely static site to a maintainable, extensible, data-driven platform"
+      ],
+      "role": "Frontend",
+      "summary": "Migrated a static HTML/CSS/JS site to React/Next.js + TypeScript and established a baseline for maintainability, accessibility, and SEO hygiene.",
+      "tech": ["React", "Next.js", "TypeScript", "CSS Modules", "HTML/CSS/JS (Legacy)"],
+      "term": "2025.06–2025.12"
+    },
+    "lgAiSquare": {
+      "highlights": [
+        "Refined pagination/search responses to reduce frontend integration complexity",
+        "Strengthened exception handling and logging for production support",
+        "Reviewed slow queries and indexes to mitigate performance bottlenecks"
+      ],
+      "name": "LG AI Square — Platform Hardening",
+      "results": [
+        "Reduced data-related friction for frontend development and improved operational readiness"
+      ],
+      "role": "Web Engineer",
+      "summary": "Improved legacy modules and production support readiness (queries/caching/logging). Also refined API/data behaviors that directly affect frontend development.",
+      "tech": ["PHP", "MySQL"],
+      "term": "2024.07-2025.01"
+    },
+    "lgPwn": {
+      "highlights": [
+        "Turned repeated sections into reusable blocks to reduce change cost",
+        "Handled responsive and cross-browser issues; clarified styling conventions",
+        "Standardized content structure (headings/links) for consistent page quality"
+      ],
+      "name": "LG PWN — Static Pages & Components",
+      "results": ["Improved delivery speed and reduced UI inconsistencies across pages"],
+      "role": "Frontend",
+      "summary": "Stabilized UI quality in a static environment by extracting reusable UI blocks and aligning responsive/accessibility standards.",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "term": "2025.04–2025.04"
+    },
+    "sideProjects": {
+      "items": [
+        {
+          "highlights": [
+            "Separated editor UI and state to handle complex interactions reliably",
+            "Designed a user flow for exporting and sharing generated results"
+          ],
+          "name": "AI Post Card",
+          "role": "Personal / Fullstack",
+          "summary": "Interactive postcard editor that generates and exports shareable images from user input and customization.",
+          "tech": ["React", "Next.js", "TypeScript", "Zustand", "Tailwind", "Testing"],
+          "term": "2024.01"
+        },
+        {
+          "highlights": ["Designed i18n structure", "Implemented dark/light themes"],
+          "name": "resu-folio",
+          "role": "Personal / Frontend",
+          "summary": "Resume/portfolio page with multilingual support and theme switching.",
+          "tech": ["React", "i18n", "Styled-components"],
+          "term": "2024.01"
+        },
+        {
+          "highlights": ["Added unit tests for key behaviors", "Improved input UX"],
+          "name": "Mandalart",
+          "role": "Personal / Frontend",
+          "summary": "Short project featuring mandalart creation/reset and image export.",
+          "tech": ["React", "Jest", "Testing Library", "Styled-components"],
+          "term": "2024.01"
+        }
+      ],
+      "title": "Side Projects"
+    },
+    "sktAiMarketer": {
+      "highlights": [
+        "Defined shared UI patterns and type-safe components for consistency",
+        "Simplified state/data flows to make feature additions safer"
+      ],
+      "name": "SKT AI Marketer — Backoffice (Paused)",
+      "results": ["A scalable backoffice UI foundation for future expansion"],
+      "role": "Frontend",
+      "summary": "Designed scalable UI patterns for a React/TypeScript backoffice (tables/filters/forms) with clean typed state and reusable components.",
+      "tech": ["React", "TypeScript"],
+      "term": "2024.XX–Paused"
+    },
+    "title": "Projects"
   }
 }
